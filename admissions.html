@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nist</title>
+
+    <style>
+        a {
+            font-size: 13pt;
+            color: white;
+        }
+
+        li {
+            color: crimson;
+            font-size: 12pt;
+        }
+
+        #admission {
+            padding-left: 2.5mm;
+        }
+
+        button {
+            border-radius: 7px;
+            padding: 5px;
+            border: 1px solid #56CCF2;
+        }
+
+        #links,
+        button {
+            background: #56CCF2;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #2F80ED, #56CCF2);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #2F80ED, #56CCF2);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        input {
+            border-radius: 5px;
+            border: 1px double black;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+
+        #inputs {
+            text-align: center;
+        }
+
+        .userDetails {
+            width: 100%;
+        }
+
+        .required {
+            color: red;
+        }
+
+        .selectUserDetails {
+            border: 1px double black;
+            height: 22px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        input:hover {
+            background-color: #c5e4ee;
+        }
+
+        select:hover {
+            background-color: #c5e4ee;
+        }
+        button:active{
+            background-color: teal;
+        }
+        h3{
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <hr> -->
+
+    <div style="height: 200px; background-color: rgb(21, 13, 128);border-radius: 7px; border-top: 3px solid blue;">
+        <center>
+            <div id="links" style="text-align: center; width: 80%; border-radius: 3px; padding: 2mm;" class="container">
+
+                <!-- <h3> -->
+
+                <a href="about.html">About Us</a> &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="service.html">Services</a> &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="admissions.html">Admissions</a> &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <a href="contact.html">Contact Us</a>
+                <!-- </h3> -->
+            </div>
+        </center>
+        <div style="float: left; width:60%">
+            <div style="height: 110px;">
+
+                <center>
+                    <div style="width: 80%;">
+
+                        <h1 style="color: white;">
+                            ONLINE INFORMATION SYSTEM
+                        </h1>
+                        <hr style="border: 1px solid white;">
+
+                        <div>
+                            <address>
+
+                                <p style="margin-top: -2px; font-size: 23px; color: white; font-style: normal;">
+                                    National Insitute of Science and Technology (Autonomous)
+
+                                </p>
+                                <p style="margin-top: -10px; font-size: 17px; color: white; font-style: normal;">
+
+                                    Palur Hills, Berhampur,Odisha, Pin-721301
+                                </p>
+                            </address>
+
+                        </div>
+                </center>
+            </div>
+
+        </div>
+        <!-- </div> -->
+        <div style="float: right; width:35%;">
+            <center>
+
+                <div style="height: 100%;">
+                    <table style="width: 80%;">
+                        <thead>
+                            <tr>
+
+                                <th style="color: white;">User Name:</th>
+                                <th style="color: white;">Password:</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td><input type='textbox'></td> &nbsp;
+                                <td><input type="password"></td> &nbsp;
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div><br>
+                <div>
+                    <button>Login</button>
+                </div>
+            </center>
+        </div>
+    </div>
+    <hr>
+    <div>
+
+
+        <div>
+            <div id="admission" style="width: 73%; float: right; border-left: 1px solid #e7e5e5;">
+                <!-- <form action=""> -->
+                <center>
+
+                    <div id="studentDetails" style="border-radius: 7px; background-color: #e7e5e5; text-align: center; height: 800px;">
+                        <div style="padding-left: 20%; padding-right: 20%;">
+
+                            <div id="details" style="width: 100%;">
+                                <h3 style="text-align: center; font-size: 26.72px; padding-top: 20px;">Admission form:
+                                </h3>
+                                <center>
+
+                                    <marquee behavior="alternate" scrollamount='10' direction="left" style="margin-top: -10px;">
+                                        <ul type='none'>
+                                            <li style="font-size: 12px;">
+                                                * MANDATORY FIELDS
+                                            </li>
+                                            
+                                        </ul>
+                                    </marquee>
+                                </center>
+                            </div>
+                            <div id="inputs" style="width: 100%;">
+                                <div>
+
+                                    <h3 style="text-align: left;"> Name:<span class="required">*</span> <input
+                                            class="userDetails" id="name" type="text" placeholder="Full Name" required>
+                                    </h3>
+
+                                    <h3 style="text-align: left;">Email-id:<span class="required">*</span> <input
+                                            id="email" class='userDetails' type='email'
+                                            placeholder="eg: student@gmail.com" required>
+                                    </h3>
+
+                                    <h3 style="text-align: left;">Mobile:<span class="required">*</span> <input
+                                            class='userDetails' id="mobile" type="number"
+                                            placeholder="Your 10 digit mobile number" required></h3>
+                                </div>
+                                <hr style="border: 1px solid rgb(100, 97, 97);">
+                                <div>
+                                    <div style="width: 45%; float: left;">
+                                        <h3>B:O:B <span class="required">*</span>
+                                            <input class='userDetails' id="dob" type="date"
+                                                placeholder="Your 10 digit mobile number" required>
+                                        </h3>
+                                    </div>
+                                    <div style="width: 45%; float: right;">
+                                        <h3>Gender: <span class="required">*</span>
+                                            <select class='selectUserDetails' name="section" id="gender" required>
+                                                <option value="Select" style="color: rgb(255, 0, 0);">Select</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Others">Others</option>
+
+                                            </select>
+                                        </h3>
+                                    </div>
+
+                                </div><br><br><br><br><br>
+                                <hr style="border: 1px solid rgb(100, 97, 97);">
+                                <div>
+                                    <div style="width: 45%; float: left;">
+                                        <h3 style="text-align: left;"> 12th Institute Name:<span class="required">*</span> <input
+                                            class="userDetails" id="instituteName" type="text" placeholder="Institute Name" required>
+                                        </h3>
+                                        <h3 style="text-align: left;"> 12th CGPA/Percentage:<span class="required">*</span> <input
+                                            class="userDetails" id="instituteMarks" type="text" placeholder="Marks" required>
+                                        </h3>
+                                        <h3 style="text-align: left;"> 12th Passing Year:<span class="required">*</span> <input
+                                            class="userDetails" id="institutePassingYear" type="year" placeholder="Passing Year" required>
+                                        </h3>
+                                        
+                                    </div>
+                                    <div style="width: 45%; float: right;">
+                                        <h3 style="text-align: left;"> 10th Institute Name:<span class="required">*</span> <input
+                                            class="userDetails" id="schoolName" type="text" placeholder="School Name" required>
+                                        </h3>
+                                        <h3 style="text-align: left;"> 10th CGPA/Percentage:<span class="required">*</span> <input
+                                            class="userDetails" id="schoolMarks" type="text" placeholder="Marks" required>
+                                        </h3>
+                                        <h3 style="text-align: left;"> 10th Passing Year:<span class="required">*</span> <input
+                                            class="userDetails" id="schoolPassingYear" type="text" placeholder="Passing Year" required>
+                                        </h3>
+                                    </div>
+
+                                </div>
+                                <!-- <hr> -->
+                            </div>
+                            <div style="margin-top: 235px;">
+                                <hr style="border: 1px solid rgb(100, 97, 97);"><br>
+
+                                <center>
+
+                                    <div id="reset" style="float: left; width: 45%; margin-top: 4px; margin-bottom: 25px;">
+
+                                        <button type="reset" id="resetbtn" onclick="reset()"
+                                            style="font-size: 11pt; border-radius: 10px; padding: 2mm 4mm 2mm 4mm; border-width: 0.5mm;"><b>Reset</b></button>
+
+                                    </div>
+                                    <div id="submit" style="float: right; width: 45%; margin-top: 4px; margin-bottom: 25px;">
+
+                                        <button type="submit" id="submitbtn" onclick="submit()"
+                                            style="font-size: 11pt; border-radius: 10px; padding: 2mm 4mm 2mm 4mm; border-width: 0.5mm;"><b>Submit</b></button>
+
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+                <!-- </form> -->
+
+            </div>
+            <br> <br>
+            <!-- <hr> -->
+            <div style="float: left; width: 20%; border-radius: 0 0 6px 6px; padding: 5px; border: solid #cacaca 1px;">
+                <center>
+
+                    <marquee behavior="" scrollamount='5' direction="up">
+                        <ol>
+                            <li>
+                                College will reopen in Augest. Date
+                                will be anounced soon
+                            </li><br>
+                            <li>
+                                Permission for online classes will be given only to those students who will show proper
+                                Covid-19
+                                report.
+                            </li><br>
+                            <li>Strict action will be taken if a student shows fake reports</li><br>
+                        </ol>
+                    </marquee>
+
+                </center>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submit() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var mobile = document.getElementById('mobile').value;
+            var dob = document.getElementById('dob').value;
+            var gender = document.getElementById('gender').value;
+            var name_12 = document.getElementById('instituteName').value;
+            var marks_12 = document.getElementById('instituteMarks').value;
+            var year_12 = document.getElementById('institutePassingYear').value;
+            var name_10 = document.getElementById('schoolName').value;
+            var marks_10 = document.getElementById('schoolMarks').value;
+            var year_10 = document.getElementById('schoolPassingYear').value;
+
+
+            var alertMessage = 'Details are not valid! Please enter valid details';
+            if (name == "" || email == "" || mobile == "" || dob == "" || gender == "select" ||name_12 == "" || marks_12 == "" || year_12 == "" || name_10 == "" || marks_10 == "" || year_10 == "" ) {
+                alert(alertMessage)
+            }
+            else{
+                alert(`Your respones is been recorded! 
+                We will send further process to your male`)
+            }
+            location.reload();
+        }
+
+        function reset() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var mobile = document.getElementById('mobile').value;
+            var dob = document.getElementById('dob').value;
+            var gender = document.getElementById('gender').value;
+            var name_12 = document.getElementById('instituteName').value;
+            var marks_12 = document.getElementById('instituteMarks').value;
+            var year_12 = document.getElementById('institutePassingYear').value;
+            var name_10 = document.getElementById('schoolName').value;
+            var marks_10 = document.getElementById('schoolMarks').value;
+            var year_10 = document.getElementById('schoolPassingYear').value;
+            location.reload();
+            
+        }
+    </script>
+
+</body>
+
+</html>
